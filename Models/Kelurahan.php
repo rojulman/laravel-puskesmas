@@ -13,4 +13,7 @@ class Kelurahan extends Model
 
     public $timestamps = false;
 
+    public function pasien(){
+        return $this->hasMany(Pasien::class);
+    }
 }
